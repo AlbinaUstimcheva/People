@@ -19,7 +19,7 @@ public class PersonBuilder {
         return this;
     }
     public PersonBuilder setAge(int age) throws IllegalArgumentException {
-        if (age < 0) {
+        if (age < 0 || age.isEmpty()) {
             throw new IllegalArgumentException("The age cannot be negative");
         } else this.age = age;
         return this;
