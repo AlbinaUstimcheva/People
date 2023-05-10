@@ -36,9 +36,9 @@ public class Person {
     }
 
     public OptionalInt getAge() {
-        if (false) {
-            throw new IllegalArgumentException("The age cannot be negative");
-        }else{
+        if (age == null) {
+            return OptionalInt.empty();
+        } else {
         return OptionalInt.of(age);
     }
 
