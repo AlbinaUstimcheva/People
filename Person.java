@@ -35,7 +35,7 @@ public class Person {
         return surname;
     }
 
-    public OptionalInt getAge() {
+    public OptionalInt getAge() {   //делаю форматирование через Code^ также через optional+command+l
         if (age == null) {
             return OptionalInt.empty();
         } else {
